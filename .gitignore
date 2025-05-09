@@ -1,0 +1,38 @@
+# Binaries
+# If your executable is named after the directory:
+http-go
+# Or if you use `go build -o myapp`
+myapp
+*.exe # For Windows executables
+
+# Go build cache
+*.test
+*.prof
+
+# Dependency directory (if you ever use `go mod vendor`)
+vendor/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Log files (if you create any explicitly)
+*.log
+log/
+logs/
+
+# Environment files (if you use .env for configuration)
+.env
+.env.*
+!.env.example
+
+# Coverage output
+coverage.out
+*.cover
