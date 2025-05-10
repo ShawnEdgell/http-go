@@ -41,7 +41,7 @@ To run this application locally for development or testing using Docker:
 1.  **Clone the repository (if you haven't already):**
 
     ```bash
-    git clone [https://github.com/ShawnEdgell/http-go.git](https://github.com/ShawnEdgell/http-go.git) # Replace with your actual repo URL
+    git clone [https://github.com/ShawnEdgell/http-go.git](https://github.com/ShawnEdgell/http-go.git)
     cd http-go
     ```
 
