@@ -79,16 +79,15 @@ To run this application locally for development or testing using Docker:
 
 This application is deployed on a Virtual Private Server (VPS) using:
 
-- **Docker:** The Go application is containerized using the provided `Dockerfile`.
-- **Docker Compose:** The `docker-compose.yml` file on the VPS is used to manage the application container's lifecycle (e.g., starting, stopping, restarting).
+- **Docker:** The Go application is containerized using the `Dockerfile` within this project.
+- **Docker Compose:** This application is run as a service defined in a centralized `docker-compose.yml` file (typically located in the `~/projects/` directory on the VPS), which manages all deployed application containers.
 - **Caddy:** Acts as a reverse proxy on the VPS, routing traffic from `https://go.skatebit.app` to the running Docker container and automatically handling SSL/TLS certificates via Let's Encrypt.
 
-## Project Structure
+## Project Structure (This Repository)
 
 - `main.go`: Contains all the server logic, including request handlers, middleware, and server setup.
 - `go.mod`: Manages project Go module definition.
-- `Dockerfile`: Instructions to build the Docker image for the application.
-- `docker-compose.yml`: (On the VPS) Defines how to run the Docker container as a service.
+- `Dockerfile`: Instructions to build the Docker image for this specific application.
 - `.gitignore`: Specifies intentionally untracked files that Git should ignore.
 - `README.md`: This file.
 
