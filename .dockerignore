@@ -1,0 +1,10 @@
+.git
+.gitignore
+node_modules # If you're installing them fresh in the Dockerfile
+npm-debug.log
+Dockerfile
+docker-compose.yml 
+*.env # Environment files often contain secrets
+.DS_Store
+.vscode/
+# Add any other local development files/folders or build artifacts
